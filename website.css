@@ -1,0 +1,212 @@
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+  --fontSize: 1rem;
+  --lineHeight: calc(var(--fontSize) * 1.5);
+  --baseline: calc(var(--lineHeight) / 2);
+
+  --sansFont: "Inter";
+  --h1-size: 2.8rem;
+  --h2-size: 2.2rem;
+  --h3-size: 1.4rem;
+  --h4-size: 1.1rem;
+
+  --fg-color: hsl(0, 50%, 50%);
+  --fg-accent-color: hsl(210, 90%, 50%);
+  --fg-accent-color--light: hsla(210, 90%, 50%, 25%);
+  --fg-accent-color--lighter: hsla(210, 90%, 50%, 8%);
+
+  --spacing-xs: 0.5rem; /* 8px  */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 72px */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--sansFont), -system-ui, system-ui, sans-serif;
+  font-size: var(--fontSize);
+  line-height: var(--lineHeight);
+  background: var(--background-color);
+  color: var(--foreground-color);
+  letter-spacing: -0.01em;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-variant-ligatures: contextual common-ligatures;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "cv10" 1; /* G */
+}
+/* first element has no top margin */
+:first-child {
+  margin-top: unset;
+}
+:last-child {
+  margin-bottom: unset;
+}
+
+[hidden] {
+  display: none !important;
+}
+[disabled] {
+  pointer-events: none;
+  opacity: 0.3;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  flex: 1;
+}
+
+
+h1 {
+  font-size: var(--h1-size);
+  line-height: calc(var(--lineHeight) * 2);
+  letter-spacing: -0.05em;
+}
+h2 {
+  font-size: var(--h2-size);
+  line-height: calc(var(--lineHeight) * 2);
+  letter-spacing: -0.03em;
+}
+h3 {
+  font-size: var(--h3-size);
+  line-height: calc(var(--lineHeight) * 2);
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-size: var(--h4-size);
+  line-height: calc(var(--lineHeight) * 2);
+  letter-spacing: -0.012em;
+}
+h1,
+h2,
+h3,
+h4 {
+  padding-top: calc(var(--baseline) * 0.75);
+  padding-bottom: calc(var(--baseline) * 0.25);
+  margin-top: 0;
+  margin-bottom: var(--baseline);
+}
+* + h1, h2, h3, h4 {
+/*   background-color: pink; */
+  /*   margin-top: var(--lineHeight); */
+  /*   padding-top: calc(var(--lineHeight) * 0.5); */
+  /*   padding-bottom: calc(var(--lineHeight) * 0.5); */
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+* + p {
+  margin-top: calc(var(--baseline) / 2);
+}
+p a {
+  font-weight: 500;
+  color: var(--fg-accent-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--fg-accent-color--light);
+}
+p a:hover {
+  color: $accent;
+  background-color: var(--fg-accent-color--lighter);
+  border-bottom-color: var(--fg-accent-color);
+  border-bottom-style: solid;
+}
+
+p a:active {
+  border-bottom-style: dashed;
+}
+
+p a:focus {
+  outline: inherit;
+}
+
+p a:visited {
+  color: inherit;
+}
+
+strike {
+  opacity: 0.5;
+}
+/* p a[target="_blank"]::after {
+  display: inline-block;
+  content: "\2197";
+  font-weight: 400;
+  padding-left: 0.125em;
+}
+p a[href^="mailto:"]::before {
+  content: "\270E";
+  content: "\2192";
+  display: inline-block;
+  font-weight: 400;
+  padding-right: 0.125em;
+} */
+
+.mt-xl {
+  margin-top: var(--spacing-xl);
+}
+
+.container {
+  max-width: 56rem;
+  padding: 0 var(--spacing);
+  margin-bottom: var(--spacing-lg);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 360px) {
+  .container {
+    padding: 0 var(--spacing-lg);
+    /*     margin-bottom: var(--spacing-xl); */
+  }
+}
+
+.container--content p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.container--content .lead {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.125;
+  opacity: 0.96;
+/*   margin-top: 0; */
+  margin-top: calc(var(--baseline) * 1.5);
+  margin-bottom: calc(var(--baseline) * 1.5);
+}
+
+.logo {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.logo + p {
+  margin-top: -0.25em;
+}
+
+/* .the-important-stuff {
+  position: relative;
+}
+.the-important-stuff::before {
+  content: ' ';
+  display: block;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0; left: -20px;
+  background-color: #eee;
+  background-color: var(--fg-accent-color--light)
+} */
