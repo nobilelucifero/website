@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g class="ghost ghost-1" fill="none" fill-rule="evenodd">
+    <path fill="#0D7FF2" d="M28,0 C43.463973,-2.84068575e-15 56,12.536027 56,28 L56,56 L56,56 L28,56 C12.536027,56 1.8937905e-15,43.463973 0,28 C-1.8937905e-15,12.536027 12.536027,2.84068575e-15 28,0 Z"/>
+    <rect width="8" height="8" x="8" y="16" fill="#000" fill-opacity=".9" rx="4"/>
+    <rect width="8" height="8" x="32" y="16" fill="#000" fill-opacity=".9" rx="4"/>
+  </g>
+  <g class="ghost ghost-2" transform="translate(64)">
+    <path fill="#FFD633" d="M0,0 L28,0 C43.463973,-2.84068575e-15 56,12.536027 56,28 C56,43.463973 43.463973,56 28,56 C12.536027,56 1.8937905e-15,43.463973 0,28 L0,0 L0,0 Z"/>
+    <rect width="8" height="8" x="16" y="32" fill="#000" fill-opacity=".9" rx="4"/>
+    <rect width="8" height="8" x="40" y="32" fill="#000" fill-opacity=".9" rx="4"/>
+  </g>
+  <g class="ghost ghost-3" transform="translate(0 64)">
+    <path fill="#FF4766" d="M28,0 C43.463973,-2.84068575e-15 56,12.536027 56,28 C56,43.463973 43.463973,56 28,56 L0,56 L0,56 L0,28 C-1.8937905e-15,12.536027 12.536027,2.84068575e-15 28,0 Z"/>
+    <rect width="8" height="8" x="16" y="16" fill="#000" fill-opacity=".9" rx="4"/>
+    <rect width="8" height="8" x="40" y="16" fill="#000" fill-opacity=".9" rx="4"/>
+  </g>
+  <g class="ghost ghost-4" transform="translate(64 64)">
+    <path fill="#DEE6ED" d="M28,0 L56,0 L56,0 L56,28 C56,43.463973 43.463973,56 28,56 C12.536027,56 1.8937905e-15,43.463973 0,28 C-1.8937905e-15,12.536027 12.536027,2.84068575e-15 28,0 Z"/>
+    <rect width="8" height="8" x="8" y="32" fill="#000" fill-opacity=".9" rx="4"/>
+    <rect width="8" height="8" x="32" y="32" fill="#000" fill-opacity=".9" rx="4"/>
+  </g>
+</svg>
