@@ -136,7 +136,7 @@ p a:focus {
 }
 
 p a:visited {
-  color: inherit;
+  color: var(--fg-accent-color);
 }
 
 strike {
