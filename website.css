@@ -210,3 +210,80 @@ p a[href^="mailto:"]::before {
   background-color: #eee;
   background-color: var(--fg-accent-color--light)
 } */
+
+.intro {}
+.intro .g {
+/*   animation: 1s 1s ease-out FXfadeInBottom; */
+  animation-fill-mode: both;
+  transform-origin: 50%;
+/*   opacity: 0; */
+/*   transform: inherit; */
+}
+.intro .g:nth-child(odd) {
+/*   animation */
+}
+.intro .g2 {
+  animation-delay: 1.25s;
+}
+.intro .g3 {
+    animation-delay: 1.5s;
+}
+.intro .g4 {
+    animation-delay: 1.75s;
+}
+
+.container:not(:first-child) {
+  animation: 0.75s ease-out FXfadeInTop2;
+  animation-fill-mode: both;
+/*   transform-origin: 50%; */
+  opacity: 0;
+}
+.container:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.container:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.container:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+@keyframes FXfadeInTop2 {
+  0% {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes FXfadeInBottom {
+  0% {
+    opacity: 0;
+    top: translateY(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    top: translateY(0);
+  }
+}
+
+@keyframes FXfadeInTop {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 88px, 0);
+  }
+  52% {
+    opacity: 0;
+    transform: translate3d(0, -16px, 0) rotateZ(-30deg) scaleY(1.125);
+  }
+  75% {
+    transform: translate3d(0, 8px, 0) rotateZ(15deg) scaleY(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+  }
