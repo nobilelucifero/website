@@ -114,28 +114,28 @@ h4 {
 * + p {
   margin-top: calc(var(--baseline) / 2);
 }
-p a {
+a, a:visited {
   font-weight: 500;
   color: var(--fg-accent-color);
   text-decoration: none;
   border-bottom: 2px solid var(--fg-accent-color--light);
 }
-p a:hover {
+a:hover {
   color: $accent;
   background-color: var(--fg-accent-color--lighter);
   border-bottom-color: var(--fg-accent-color);
   border-bottom-style: solid;
 }
 
-p a:active {
+a:active {
   border-bottom-style: dashed;
 }
 
-p a:focus {
+a:focus {
   outline: inherit;
 }
 
-p a:visited {
+a:visited {
   color: var(--fg-accent-color);
 }
 
@@ -179,6 +179,9 @@ p a[href^="mailto:"]::before {
   line-height: 1.5;
 }
 
+.container--header .lead {
+  font-size: 1.5rem;
+}
 .container--content .lead {
   font-size: 1.5rem;
   font-weight: 700;
@@ -189,11 +192,11 @@ p a[href^="mailto:"]::before {
   margin-bottom: calc(var(--baseline) * 1.5);
 }
 
-.logo {
+.headline {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.logo + p {
+.headline + p {
   margin-top: -0.25em;
 }
 
@@ -246,6 +249,26 @@ p a[href^="mailto:"]::before {
 }
 .container:nth-child(4) {
   animation-delay: 0.75s;
+}
+
+.container:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.container:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.container:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.container:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+.container:nth-child(9) {
+  animation-delay: 2s;
 }
 
 @keyframes FXfadeInTop2 {
