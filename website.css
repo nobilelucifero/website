@@ -73,7 +73,6 @@ html {
   flex: 1;
 }
 
-
 h1 {
   font-size: var(--h1-size);
   line-height: calc(var(--lineHeight) * 2);
@@ -103,8 +102,11 @@ h4 {
   margin-top: 0;
   margin-bottom: var(--baseline);
 }
-* + h1, h2, h3, h4 {
-/*   background-color: pink; */
+* + h1,
+h2,
+h3,
+h4 {
+  /*   background-color: pink; */
   /*   margin-top: var(--lineHeight); */
   /*   padding-top: calc(var(--lineHeight) * 0.5); */
   /*   padding-bottom: calc(var(--lineHeight) * 0.5); */
@@ -114,7 +116,8 @@ h4 {
 * + p {
   margin-top: calc(var(--baseline) / 2);
 }
-a, a:visited {
+a,
+a:visited {
   font-weight: 500;
   color: var(--fg-accent-color);
   text-decoration: none;
@@ -187,7 +190,7 @@ p a[href^="mailto:"]::before {
   font-weight: 700;
   line-height: 1.25;
   opacity: 0.96;
-/*   margin-top: 0; */
+  /*   margin-top: 0; */
   margin-top: calc(var(--baseline) * 1.5);
   margin-bottom: calc(var(--baseline) * 1.5);
 }
@@ -214,31 +217,31 @@ p a[href^="mailto:"]::before {
   background-color: var(--fg-accent-color--light)
 } */
 
-.intro {}
+/* .intro {} */
 .intro .g {
-/*   animation: 1s 1s ease-out FXfadeInBottom; */
+  /*   animation: 1s 1s ease-out FXfadeInBottom; */
   animation-fill-mode: both;
   transform-origin: 50%;
-/*   opacity: 0; */
-/*   transform: inherit; */
+  /*   opacity: 0; */
+  /*   transform: inherit; */
 }
 .intro .g:nth-child(odd) {
-/*   animation */
+  /*   animation */
 }
 .intro .g2 {
   animation-delay: 1.25s;
 }
 .intro .g3 {
-    animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 .intro .g4 {
-    animation-delay: 1.75s;
+  animation-delay: 1.75s;
 }
 
 .container:not(:first-child) {
   animation: 0.5s ease-out FXfadeInTop2;
   animation-fill-mode: both;
-/*   transform-origin: 50%; */
+  /*   transform-origin: 50%; */
   opacity: 0;
 }
 .container:nth-child(2) {
@@ -308,5 +311,5 @@ p a[href^="mailto:"]::before {
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
-
   }
+}
