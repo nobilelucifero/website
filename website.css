@@ -259,19 +259,19 @@ p a[href^="mailto:"]::before {
 }
 
 .container:nth-child(6) {
-  animation-delay: 1.25s;
-}
-
-.container:nth-child(7) {
-  animation-delay: 1.5s;
-}
-
-.container:nth-child(8) {
   animation-delay: 1.75s;
 }
 
-.container:nth-child(9) {
+.container:nth-child(7) {
   animation-delay: 2s;
+}
+
+.container:nth-child(8) {
+  animation-delay: 2.25s;
+}
+
+.container:nth-child(9) {
+  animation-delay: 2.5s;
 }
 
 @keyframes FXfadeInTop2 {
